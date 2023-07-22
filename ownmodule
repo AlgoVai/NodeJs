@@ -1,0 +1,18 @@
+function name(){
+    return "Shoeb Ahmad";
+};
+const getAge=()=>{
+    return 23;
+}
+
+//exports.name=name;
+//exports.getAge=getAge;
+module.exports{
+    name,
+        getAge;
+
+}
+
+///////////////////////////////////////
+const rq=require("./module");
+console.log(rq.getAge());
